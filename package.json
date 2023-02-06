@@ -1,0 +1,6 @@
+{
+  "scripts": {
+    "build": "pug -o site -P src",
+    "watch": "pug -o site -w -P src"
+  }
+}
