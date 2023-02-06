@@ -3,6 +3,6 @@
     "build": "pug -o site -P src/views",
     "watch": "pug -o site -w -P src/views",
     "predeploy": "pug -o site -P src/views",
-    "deploy": "git add ./site && git commit -a -m \"Deployed at $(date)\" && git subtree push --prefix site origin gh-pages"
+    "deploy": "git subtree push --prefix site origin gh-pages"
   }
 }
