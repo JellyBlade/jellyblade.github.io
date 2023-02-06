@@ -1,2 +1,0 @@
-# jellyblade.github.io
-Portfolio :)
