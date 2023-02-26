@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Portfolio - Projects</title>
+    <style>body {
+  background-color: rgb(35, 35, 35);
+}
+
+main {
+  background-color: rgb(255, 255, 255);
+  border: 1px solid black;
+  border-radius: 5px;
+  padding: 1vw;
+  display: flex;
+}
+
+nav.top {
+  background-color: rgb(255, 255, 255);
+  border: 1px solid black;
+  border-radius: 5px;
+  padding: 1vw;
+}
+
+nav.top > ul {
+  display: flex;
+  list-style-type: none;
+}
+
+nav.top > ul > li {
+  padding: 0 1vw 0 0;
+}
+
+.nav-button {
+  border: 1px solid black;
+  padding: 0 1vw 0 0
+}
+
+nav.side > ul{
+  display: flex;
+  flex-direction: column;
+  padding: 1vw 1vw 0 0 ;
+  list-style-type: none;
+}
+
+nav.side > ul > li {
+  padding: 0 0 1vw 0;
+}
+
+#content {
+  padding: 1vw;
+}
+
+#footer {
+  background-color: rgb(255, 255, 255);
+  border: 1px solid black;
+  border-radius: 5px;
+  padding: 0 0 0 1vw;
+}
+
+#gallery {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#gallery > a {
+  width: 100px;
+  height: auto;
+  padding: 1vw;
+}
+
+#gallery > a > img {
+  width: 100%;
+  height: 100%;
+}
+    </style>
+  </head>
+  <body>
+    <nav class="top">
+      <ul>
+        <li><a href="/site/index.html">Index</a></li>
+        <li><a href="/site/projects.html">Projects</a></li>
+        <li><a href="/site/server.html">Server</a></li>
+        <li><a href="/site/music.html">Music</a></li>
+        <li><a href="/site/contact.html">Contact</a></li>
+      </ul>
+    </nav>
+    <main>
+      <nav class="side">
+        <ul>
+          <li><a href="/site/projects/fleets.html">Fleets</a></li>
+          <li><a href="/site/projects/retrograde.html">Retrograde</a></li>
+          <li><a href="/site/projects/portfolio.html">Portfolio</a></li>
+          <li><a href="/site/projects/xp_font.html">XP Font</a></li>
+          <li><a href="/site/projects/bonk_bot.html">Bonk Bot</a></li>
+          <li><a href="/site/projects/powershell_scripts.html">PowerShell Scripts</a></li>
+        </ul>
+      </nav>
+      <div id="content">
+        <h1>Fleets</h1>
+        <p>Internal tool for tracking vehicle maintenance and repair tasks.</p>
+        <h2>Overview</h2>
+        <ul>
+          <li>Full-stack web development project to track vehicle maintenance for a local business.</li>
+          <li>Backend database in SQL Server with custom SSRS reports.</li>
+          <li>Frontend utilized ejs, express, browserify, jquery, jimp, and more.</li>
+          <li>Created as part of a 200-hour practicum.</li>
+        </ul>
+        <p>Overview text</p>
+        <h2>Details</h2>
+        <div id="gallery"><a href="http://placekitten.com/400/400"><img src="http://placekitten.com/400/400" alt="No alt text provided." width="400" height="400"/></a><a href="http://placekitten.com/400/400"><img src="http://placekitten.com/400/400" alt="No alt text provided." width="400" height="400"/></a><a href="http://placekitten.com/400/400"><img src="http://placekitten.com/400/400" alt="No alt text provided." width="400" height="400"/></a><a href="http://placekitten.com/400/400"><img src="http://placekitten.com/400/400" alt="No alt text provided." width="400" height="400"/></a>
+        </div>
+        <p>details text`</p>
+        <h2>Links</h2><a href="https://github.com/JellyBlade/fleets">GitHub</a>
+      </div>
+    </main>
+    <div id="footer">
+      <p>Copyright or something 2023</p>
+    </div>
+  </body>
+</html>

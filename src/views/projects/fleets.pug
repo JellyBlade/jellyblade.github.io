@@ -1,0 +1,26 @@
+extends ../../includes/projects/template.pug
+block projectVariables
+  - var projectName = "Fleets"
+  - 
+    var projectOverviewList = [
+      "Full-stack web development project to track vehicle maintenance for a local business.",
+      "Backend database in SQL Server with custom SSRS reports.",
+      "Frontend utilized ejs, express, browserify, jquery, jimp, and more.",
+      "Created as part of a 200-hour practicum.",
+    ]
+  - 
+    var projectDetailsImages = [
+      "http://placekitten.com/400/400",
+      "http://placekitten.com/400/400",
+      "http://placekitten.com/400/400",
+      "http://placekitten.com/400/400"
+    ]
+block projectIntro
+  p Internal tool for tracking vehicle maintenance and repair tasks.
+
+block projectOverview
+  p Overview text
+block projectDetails
+  p details text`
+block projectLinks
+  a(href="https://github.com/JellyBlade/fleets") GitHub

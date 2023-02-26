@@ -1,10 +1,44 @@
+- 
+  var mainNavButtons = [
+    "Index",
+    "Projects",
+    "Server",
+    "Music",
+    "Contact",
+  ]
+- var sideNavButtons = ["Example1", "Example2"]
+mixin navList(href)
+  - var name = href.split("/").pop();
+  li
+    a(class=nav-button href="/site/" + href.toLowerCase().replace(/ /g, "_") + ".html")= name
+
+mixin imageGallery(src, alt="No alt text provided.", width=400, height=400)
+  a(href=src)
+    img(src=src, alt=alt, width=width, height=height)
+  if block
+    #description
+      block
+
 block variables
 doctype html
 html(lang="en")
   head
     title Portfolio - #{pageTitle}
+    style
+      include style.css
   body
-    block content
-    block foot
-      #footer
-        p footer stuff :D
+    nav.top
+      ul
+        for val in mainNavButtons
+          +navList(val)
+    main
+      nav.side
+        block side-nav
+          ul
+            for val in sideNavButtons
+              +navList(val)
+      #content
+        block content
+    #footer
+      block foot
+        p Copyright or something 2023
